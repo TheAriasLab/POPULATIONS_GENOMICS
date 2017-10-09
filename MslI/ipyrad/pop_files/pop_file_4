@@ -1,0 +1,13 @@
+E02	dep1
+F02	dep1
+G02	dep1
+H02	dep2
+A03	dep2
+B03	dep2
+C03	dep3
+D03	dep3
+E03	dep3
+F03	dep4
+G03	dep4
+H03	dep4
+# dep1:3 dep2:3 dep3:3 dep4:3

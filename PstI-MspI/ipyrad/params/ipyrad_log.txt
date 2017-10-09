@@ -1,0 +1,113 @@
+
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-05 05:49
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': ['estricto'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-05 05:49
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-coco_PM.txt', 'branch': ['laxo'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-05 05:49
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': None, 'steps': '3456', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-06 05:08
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': None, 'steps': '3456', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:14
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': ['laxo_min_sample_2'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:14
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': ['laxo_min_sample_4'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:14
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-laxo.txt', 'branch': ['laxo_min_sample_12'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:14
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': ['estricto_min_sample_2'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:14
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': ['estricto_min_sample_4'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:14
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-estricto.txt', 'branch': ['estricto_min_sample_12'], 'steps': '', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:14
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-estricto_min_sample_2.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:15
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-estricto_min_sample_4.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:16
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-estricto_min_sample_12.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:16
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-laxo_min_sample_2.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:17
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-laxo_min_sample_4.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')
+ -------------------------------------------------------------
+  ipyrad [v.0.7.15]
+  Interactive assembly and analysis of RAD-seq data
+ -------------------------------------------------------------
+  Begin run: 2017-10-09 09:18
+  Using args {'preview': False, 'force': True, 'threads': 2, 'results': True, 'quiet': False, 'merge': None, 'ipcluster': None, 'cores': 0, 'params': '/home/baya/jorge/GBS/PstI-MspI/ipyrad/params/params-laxo_min_sample_12.txt', 'branch': None, 'steps': '7', 'debug': False, 'new': None, 'MPI': False}
+  Platform info: ('Linux', 'baya', '4.4.0-96-generic', '#119-Ubuntu SMP Tue Sep 12 14:59:54 UTC 2017', 'x86_64')

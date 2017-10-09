@@ -1,0 +1,10 @@
+fastqc/*/**
+
+PM/PstI-MspI_fastqs
+PM/laxo_consens
+PM/laxo_clust_0.85
+PM/laxo_across
+PM/PstI-MspI_edits
+PM/estricto_consens
+PM/estricto_clust_0.9
+PM/estricto_across

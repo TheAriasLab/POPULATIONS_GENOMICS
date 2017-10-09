@@ -1,0 +1,13 @@
+PM_R1.fastq.bz2
+PM_R2.fastq.bz2
+PM_R1_grep.fastq
+PM_R2_grep.fastq  
+test/*/**
+ipyrad_log.txt
+
+
+
+
+
+
+
