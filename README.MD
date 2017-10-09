@@ -49,7 +49,9 @@
 
 ### Scripts globales
 
-* **piloto_coco**
+* **piloto_coco.sh**
 	* script gobal que llama al resto de scripts para poder correr el analisis completo
 * **borrar.sh**
 	* borra los archivos de corridas pasadas para evitar conflictos: este scritp debe ir aparte de piloto_coco.sh por cuestiones de seguirdad
+
+tiempo de corrida : 6783m6.296s = 4.783 días
