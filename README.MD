@@ -1,10 +1,10 @@
-# Proyecto GBS para cocos nucifera
+# __Proyecto GBS para *Cocos nucifera*__
 
-## Arbol de directorios
+## **Arbol de directorios**
 
-### Enzimas de restriccion usadas
+### **Enzimas de restriccion usadas**
 
-* MslI
+* **MslI**
 	* ipyrad: analisis en ipyrad
 		* barcodes: barcodes para identificar cada muestra
 		* fastqc : carpeta con los analisis de fastqc para los archivos RAW y preprocesados
@@ -27,7 +27,7 @@
 
 
 
-* PstI_MspI
+* **PstI_MspI**
 	* ipyrad: analisis en ipyrad
 		* barcodes: barcodes para identificar cada muestra
 		* fastqc : carpeta con los analisis de fastqc para los archivos RAW y preprocesados
@@ -49,7 +49,7 @@
 
 ### Scripts globales
 
-* piloto_coco
+* **piloto_coco**
 	* script gobal que llama al resto de scripts para poder correr el analisis completo
-* borrar.sh
+* **borrar.sh**
 	* borra los archivos de corridas pasadas para evitar conflictos: este scritp debe ir aparte de piloto_coco.sh por cuestiones de seguirdad
