@@ -24,18 +24,40 @@ cp /home/baya/jorge/PstI-MspI/RAW/PM_R2.fastq.bz2 /home/baya/jorge/GBS/PstI-MspI
 #rm /home/baya/jorge/PstI-MspI/RAW/test/original/PM_R2.fastq.bz2 /home/baya/jorge/PstI-MspI/RAW/test/original/PM_R1.fastq.bz2 -v
 
 #correr los scripts
+
+echo ..........................................................MslI
+
+echo .................................................... MslI limpiando reads de otras librerias
+bash /home/baya/jorge/GBS/MslI/scripts/pre_procesamiento_1_MslI.sh 	# bash propio
+
 echo .................................................... MslI pasos 1 y 2 
-bash /home/baya/jorge/GBS/MslI/scripts/pre_procesamiento_MslI.sh    #  MslI pasos 1 y 2
-echo .................................................... PM pasos 1 y 2 
-bash /home/baya/jorge/GBS/PstI-MspI/scripts/pre_procesamiento_PM.sh #pasos PM 1 y 2
-echo .................................................... PM pasos 3 al 6 
-bash /home/baya/jorge/GBS/PstI-MspI/scripts/wrapper_2.sh           # PM      pasos 3 al 6
+bash /home/baya/jorge/GBS/MslI/scripts/pre_procesamiento_2_MslI.sh    #  MslI pasos 1 y 2
+
 echo .................................................... MslI pasos 3 al 6 
 bash /home/baya/jorge/GBS/MslI/scripts/wrapper.sh                  # MslI         pasos 3 al 6
-echo .................................................... PM paso 7
-bash /home/baya/jorge/GBS/PstI-MspI/scripts/step_7_PM.sh            # PM      paso 7
+
 echo .................................................... MslI paso 7
 bash /home/baya/jorge/GBS/MslI/scripts/step_7_MslI.sh                # MslI    paso 7
+
+
+
+
+echo ..........................................................PstI-MspI
+
+echo .................................................... PstI-MspI limpiando reads de otras librerias
+bash /home/baya/jorge/GBS/PstI-MspI/scripts/pre_procesamiento_1_PM.sh # bash propio
+
+echo .................................................... PM pasos 1 y 2 
+bash /home/baya/jorge/GBS/PstI-MspI/scripts/pre_procesamiento_2_PM.sh #pasos PM 1 y 2
+
+echo .................................................... PM pasos 3 al 6 
+bash /home/baya/jorge/GBS/PstI-MspI/scripts/wrapper_2.sh           # PM      pasos 3 al 6
+
+
+echo .................................................... PM paso 7
+bash /home/baya/jorge/GBS/PstI-MspI/scripts/step_7_PM.sh            # PM      paso 7
+
+
 
 
 
