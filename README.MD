@@ -2,7 +2,7 @@
 
 ## **Arbol de directorios**
 
-### **Resumen corridas en ipyrad **
+### **Resumen corridas en ipyrad**
 * **summary_ipyrad**
 
 ### **Enzimas de restriccion usadas**
