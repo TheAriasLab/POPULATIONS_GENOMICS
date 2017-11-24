@@ -9,7 +9,7 @@
 
 **Procesamiento**: establecer las reglas para llamar SNPs y filtrar los SNPs de acuerdo a esas reglas
 
-**Analísis**: utilizar los SNPs encontrados para responder preguntas biolÃ³gicas 
+**Analísis**: utilizar los SNPs encontrados para responder preguntas biológicas 
 
 
 ##  **Software necesario** 
