@@ -3,7 +3,7 @@
 **Pipeline para el anlásis bioinformático de datos prevenientes de RADseq: GBS (MslI) y ddRAD (PstI-MspI) en *Cocos nucifera*** (con genoma de referencia) 
 
 
-**Preprocesaiento => procesamieto => Analísis**
+**Preprocesamiento => procesamieto => Analísis**
 
 **Preprocesaiento** : remover contaminaciones de otras librerias => demultiplexado => verificar sitio de restricción => remover adaptadores
 
