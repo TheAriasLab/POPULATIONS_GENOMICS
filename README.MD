@@ -15,19 +15,19 @@
 ##  **Software necesario** 
 
 * **ipyrad http://ipyrad.readthedocs.io/**    
-	* preprocesamiento, procesamiento
+	* Preprocesamiento, procesamiento
 * **stacks http://catchenlab.life.illinois.edu/stacks/**
-	** preprocesamiento, procesamiento
+	* Preprocesamiento, procesamiento
 * **fastqc https://www.bioinformatics.babraham.ac.uk/projects/fastqc/**
-	* preprocesamiento
+	* Preprocesamiento
 * **PGDspider http://www.cmpg.unibe.ch/software/PGDSpider/**
-	* procesamiento
+	* Procesamiento
 * **Bayescan http://cmpg.unibe.ch/software/BayeScan/**
-	* AnalÃ­sis
+	* Analísis
 * **bowtie2 http://bowtie-bio.sourceforge.net/bowtie2/**
-	* preprocesamiento
+	* Preprocesamiento
 * **Custom scripts (para limpiar reads contaminantes de otras librerias, para conocer todos los sitos de restriccion posibles de Msli)**
-	* preprocesamiento, procesamiento, analísis
+	* Preprocesamiento, procesamiento, analísis
 
 
 ## **Funcionamiento de los scripts**
