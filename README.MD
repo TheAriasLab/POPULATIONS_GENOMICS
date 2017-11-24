@@ -6,7 +6,9 @@
 **Preprocesaiento => procesamieto => Analísis**
 
 **Preprocesaiento** : remover contaminaciones de otras librerias => demultiplexado => verificar sitio de restricción => remover adaptadores
+
 **Procesamiento**: establecer las reglas para llamar SNPs y filtrar los SNPs de acuerdo a esas reglas
+
 **Analísis**: utilizar los SNPs encontrados para responder preguntas biolÃ³gicas 
 
 
