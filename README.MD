@@ -1,30 +1,30 @@
 # __Proyecto GBS para *Cocos nucifera*__
 
-**Pipeline para el anlÃ­sis bioinformÃ¡tico de datos prevenientes de RADseq: GBS (MslI) y ddRAD (PstI-MspI) en *Cocos nucifera*** (con genoma de referencia) 
+**Pipeline para el anlásis bioinformático de datos prevenientes de RADseq: GBS (MslI) y ddRAD (PstI-MspI) en *Cocos nucifera*** (con genoma de referencia) 
 
 
-**Preprocesaiento => procesamieto => AnalÃ­sis**
+**Preprocesaiento => procesamieto => Analísis**
 
-**Preprocesaiento** : remover contaminaciones de otras librerias => demultiplexado => verificar sitio de restricciÃ³n => remover adaptadores
+**Preprocesaiento** : remover contaminaciones de otras librerias => demultiplexado => verificar sitio de restricción => remover adaptadores
 **Procesamiento**: establecer las reglas para llamar SNPs y filtrar los SNPs de acuerdo a esas reglas
-**AnalÃ­sis**: utilizar los SNPs encontrados para responder preguntas biolÃ³gicas 
+**Analísis**: utilizar los SNPs encontrados para responder preguntas biolÃ³gicas 
 
 
 ##  **Software necesario** 
 
-* ipyrad http://ipyrad.readthedocs.io/    
+* **ipyrad http://ipyrad.readthedocs.io/**    
 	* preprocesamiento, procesamiento
-* stacks http://catchenlab.life.illinois.edu/stacks/
+* **stacks http://catchenlab.life.illinois.edu/stacks/**
 	** preprocesamiento, procesamiento
-* fastqc https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+* **fastqc https://www.bioinformatics.babraham.ac.uk/projects/fastqc/**
 	* preprocesamiento
-* PGDspider http://www.cmpg.unibe.ch/software/PGDSpider/
+* **PGDspider http://www.cmpg.unibe.ch/software/PGDSpider/**
 	* procesamiento
-* Bayescan http://cmpg.unibe.ch/software/BayeScan/
+* **Bayescan http://cmpg.unibe.ch/software/BayeScan/**
 	* AnalÃ­sis
-* bowtie2 http://bowtie-bio.sourceforge.net/bowtie2/
+* **bowtie2 http://bowtie-bio.sourceforge.net/bowtie2/**
 	* preprocesamiento
-* Custom scripts (para limpiar reads contaminantes de otras librerias, para conocer todos los sitos de restriccion posibles de Msli)
+* **Custom scripts (para limpiar reads contaminantes de otras librerias, para conocer todos los sitos de restriccion posibles de Msli)**
 	* preprocesamiento, procesamiento, analísis
 
 
@@ -43,17 +43,17 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 
 * pre_procesamiento_1_MslI.sh y pre_procesamiento_1_PM.sh
 
-	* revisa los Ã­ndices combinatorios (XXXXXX+XXXXXX) de los archivos RAW y crea un Ã­ndice por cada archivo (R1 Y R2) que contiene una lista con los diferentes indices combinatorios y su frecuencia.
-	* luego el programa elige el indice combinatorio que mÃ¡s se repite (en este caso en el 98% de los reads) y elimina los reads con otros indices combinatorios, estos reads con estos Ã­ndices son producto de contaminaciones de otras librerias en el proceso de secuenciaciÃ³n
-	* luego el programa verifica que solo haya un tipo de Ã­ndice combinatorio en el nuevo archivo RAW y crea un nuevo archivo en donde se puede verificar la existencia de un solo Ã­ndice manualmente.
-	* luego corre el fastqc para revisar anomalÃ­as en la informaciÃ³n
+	* revisa los índices combinatorios (XXXXXX+XXXXXX) de los archivos RAW y crea un Ã­ndice por cada archivo (R1 Y R2) que contiene una lista con los diferentes indices combinatorios y su frecuencia.
+	* luego el programa elige el indice combinatorio que mÃ¡s se repite (en este caso en el 98% de los reads) y elimina los reads con otros indices combinatorios, estos reads con estos índices son producto de contaminaciones de otras librerias en el proceso de secuenciación
+	* luego el programa verifica que solo haya un tipo de índice combinatorio en el nuevo archivo RAW y crea un nuevo archivo en donde se puede verificar la existencia de un solo índice manualmente.
+	* luego corre el fastqc para revisar anomalías en la informaciÃ³n
 	
 	
 * pre_procesamiento_2_reference_MslI.sh y pre_procesamiento_1_reference_PM.sh
 
-	* crea los archivos de parÃ¡metros para cada uno de los analÃ­sis teniendo en cuenta sus particularidades de manera AUTOMÃTICA :)
-	* corre los pasos 1 y 2 del ipyrad que corresponden a demultiplexado, verificaciÃ³n del sitio de la enzima de restricciÃ³n y remociÃ³n de adaptadores.
-	* debido a la particularidad de ser altamente degenerado que tiene el sitio de restricciÃ³n de MslI (NNRTG) y al hecho de que ipyrad no recibe mÃ¡s de un nucleotido degenerado al mismo tiempo en la secuencia de restricciÃ³n de la enzima (en 	 esta caso N y R) se descompone el dominio de la enzima de restriccion de manera que solo se use *un* nucleotido degenerado de la siguiente manera
+	* crea los archivos de parámetros para cada uno de los analísis teniendo en cuenta sus particularidades de manera AUTOMÁTICA :)
+	* corre los pasos 1 y 2 del ipyrad que corresponden a demultiplexado, verificación del sitio de la enzima de restricciÃ³n y remociÃ³n de adaptadores.
+	* debido a la particularidad de ser altamente degenerado que tiene el sitio de restricción de MslI (NNRTG) y al hecho de que ipyrad no recibe mÃ¡s de un nucleotido degenerado al mismo tiempo en la secuencia de restricción de la enzima (en este caso N y R) se descompone el dominio de la enzima de restriccion de manera que solo se use *un* nucleotido degenerado de la siguiente manera
 	**NNRTG = RRRTG, RCRTG, RTRTG, CRRTG, CCRTG, CTRTG, TRRTG, TCRTG, TTRTG**  se corre cada uno por separado y luego se unen de nuevo usando el parÃ¡metro -m en ipyrad
 	
 * **Procesamiento**
