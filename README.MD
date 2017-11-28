@@ -26,7 +26,7 @@
 	* Analísis
 * **bowtie2 http://bowtie-bio.sourceforge.net/bowtie2/**
 	* Preprocesamiento
-* **Custom scripts 
+* **Custom scripts**
 	* Preprocesamiento, procesamiento, analísis
 	*https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/tree/master/MslI/scripts
 	*https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/tree/master/PstI-MspI/scripts
@@ -46,14 +46,14 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 	* revisa los índices combinatorios (XXXXXX+XXXXXX) de los archivos RAW y crea un índice por cada archivo (R1 Y R2) que contiene una lista con los diferentes indices combinatorios y su frecuencia.
 	* luego el programa elige el índice combinatorio que mÃ¡s se repite (en este caso en el 98% de los reads) y elimina los reads con otros indices combinatorios, estos reads con estos índices son producto de contaminaciones de otras librerias en el proceso de secuenciación
 	* luego el programa verifica que solo haya un tipo de índice combinatorio en el nuevo archivo RAW y crea un nuevo archivo en donde se puede verificar la existencia de un solo índice manualmente.
-	* luego corre el fastqc para revisar anomalías en la informaciÃ³n
+	* luego corre el fastqc para revisar anomalías en la información
 	
 	
 * pre_procesamiento_2_reference_MslI.sh y pre_procesamiento_1_reference_PM.sh
 
 	* crea los archivos de parámetros para cada uno de los analísis teniendo en cuenta sus particularidades de manera AUTOMÁTICA :)
-	* corre los pasos 1 y 2 del ipyrad que corresponden a demultiplexado, verificación del sitio de la enzima de restricción y remociÃ³n de adaptadores.
-	* debido a la particularidad de ser altamente degenerado que tiene el sitio de restricción de MslI (NNRTG) y al hecho de que ipyrad no recibe mÃ¡s de un nucleotido degenerado al mismo tiempo en la secuencia de restricción de la enzima (en este caso N y R) se descompone el dominio de la enzima de restriccion de manera que solo se use *un* nucleotido degenerado de la siguiente manera
+	* corre los pasos 1 y 2 del ipyrad que corresponden a demultiplexado, verificación del sitio de la enzima de restricción y remoción de adaptadores.
+	* debido a la particularidad de ser altamente degenerado que tiene el sitio de restricción de MslI (NNRTG) y al hecho de que ipyrad no recibe más de un nucleotido degenerado al mismo tiempo en la secuencia de restricción de la enzima (en este caso N y R) se descompone el dominio de la enzima de restriccion de manera que solo se use *un* nucleotido degenerado de la siguiente manera
 	**NNRTG = RRRTG, RCRTG, RTRTG, CRRTG, CCRTG, CTRTG, TRRTG, TCRTG, TTRTG**  se corre cada uno por separado y luego se unen de nuevo usando el parámetro -m en ipyrad
 	
 * **Procesamiento**
@@ -68,7 +68,7 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 * step_7_reference_MslI.sh y step_7_PM_reference.sh
 
 	* paso de control para poder tener varios ensamblajes
-	* se filtran los SNP's encontrados en los pasos anteriores de acuerdo al numero de veces que se repite el SNP en las 12 muestras, ensayamos con 1 repeticiÃ³n (2 individuos) , 2 repeticiones ,(4 individuos), 6 repeticiones (12 individuos, todos)
+	* se filtran los SNP's encontrados en los pasos anteriores de acuerdo al numero de veces que se repite el SNP en las 12 muestras, ensayamos con 1 repetición (2 individuos) , 2 repeticiones ,(4 individuos), 6 repeticiones (12 individuos, todos)
 	* se ramifica el proceso de manera que se refleje la explicación anterior en el pipeline, se crean archivos de parametros con el sufijo min_sample_##
 	
 * _**STACKS**_
@@ -86,7 +86,7 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 	
 * process_radtags.sh
 
-	* stacks tiene la particularidad de no aceptar barcodes de diferente tamañoo para la ¿demultiplexacion?, entonces se corre el process_radtags tantas veces como grupos de barcodes haya
+	* stacks tiene la particularidad de no aceptar barcodes de diferente tamaño para la demultiplexacion de las muestras           , entonces se corre el process_radtags tantas veces como grupos de barcodes haya
 	* corre process_radtags tantas veces como grupos de barcodes haya
 	* corre fasqc a los archivos resultantes para verificar anomalidades en los dato de forma manual
 	
@@ -94,7 +94,7 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 	
 * refmap_MslI.sh y refmap_PM.sh
 
-	* stacks no recibe los paired-end reads de la forma en que ipyrad lo hace por lo que hay que alinear los reads a un genoma de referencia y crear un Ãºnico archivo .sam por cada muestra (en vez de dos)
+	* stacks no recibe los paired-end reads de la forma en que ipyrad lo hace por lo que hay que alinear los reads a un genoma de referencia y crear un único archivo .sam por cada muestra (en vez de dos)
 	* refmap_MslI.sh debe ser corrido en primer lugar para que de forma automática haga los alineamientos muestra por muestra
 	* se llama el script de stacks refmap.pl con todas las reglas para llamar los SNPs **en** los individuos y se ramfica en analísis **entre** los individuos de igual manera que en los scripts del pipeline ipyrad step_7_reference_MslI.sh y step_7_PM_reference.sh
 
@@ -111,7 +111,7 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 	
 * bayescan_graph.r
 
-	* script R para graficar los resultados provenientes de bayescan.sh, crea una grafica en donde se marcan los loci bajo selección y establece el False Discovery Rate (FDR) un parÃ¡metro para poder para identificar los loci bajo selección 
+	* script R para graficar los resultados provenientes de bayescan.sh, crea una grafica en donde se marcan los loci bajo selección y establece el False Discovery Rate (FDR) un parámetro para poder para identificar los loci bajo selección 
 
 
 ## **Arbol de directorios**
