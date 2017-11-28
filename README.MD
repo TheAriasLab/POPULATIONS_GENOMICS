@@ -44,7 +44,7 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 * pre_procesamiento_1_MslI.sh y pre_procesamiento_1_PM.sh
 
 	* revisa los índices combinatorios (XXXXXX+XXXXXX) de los archivos RAW y crea un índice por cada archivo (R1 Y R2) que contiene una lista con los diferentes indices combinatorios y su frecuencia.
-	* luego el programa elige el índice combinatorio que mÃ¡s se repite (en este caso en el 98% de los reads) y elimina los reads con otros indices combinatorios, estos reads con estos índices son producto de contaminaciones de otras librerias en el proceso de secuenciación
+	* luego el programa elige el índice combinatorio que más se repite (en este caso en el 98% de los reads) y elimina los reads con otros indices combinatorios, estos reads con estos índices son producto de contaminaciones de otras librerias en el proceso de secuenciación
 	* luego el programa verifica que solo haya un tipo de índice combinatorio en el nuevo archivo RAW y crea un nuevo archivo en donde se puede verificar la existencia de un solo índice manualmente.
 	* luego corre el fastqc para revisar anomalías en la información
 	
