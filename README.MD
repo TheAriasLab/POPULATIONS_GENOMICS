@@ -26,17 +26,15 @@
 	* Analísis
 * **bowtie2 http://bowtie-bio.sourceforge.net/bowtie2/**
 	* Preprocesamiento
-* **Custom scripts (para limpiar reads contaminantes de otras librerias, para conocer todos los sitos de restriccion posibles de Msli)**
+* **Custom scripts 
 	* Preprocesamiento, procesamiento, analísis
+	*https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/tree/master/MslI/scripts
+	*https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/tree/master/PstI-MspI/scripts
 
 
 ## **Funcionamiento de los scripts**
 
 se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamientos enzimáticos MslI y PstI-MspI
-
-	*https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/tree/master/MslI/scripts
-	*https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/tree/master/PstI-MspI/scripts
-
 
 * _**IPYRAD**_
 
@@ -118,52 +116,113 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 
 ## **Arbol de directorios**
 
-### **Resumen corridas en ipyrad**
-* **summary_ipyrad**
+/POPULATIONS_GENOMICS/
+├── MslI                                  
+│   ├── ipyrad *---------------------------------------------------------------------------------------------------------*
+│   │   ├── barcodes			  - barcodes para identificar cada muestra
+│   │   ├── fastqc		          - carpeta con los analisis de fastqc para los archivos RAW y preprocesados
+│   │   │   ├── corrida_1                 
+│   │   │   ├── corrida_2
+│   │   │   ├── corrida_3
+│   │   │   ├── corrida_4
+│   │   │   ├── corrida_5
+│   │   │   ├── corrida_6
+│   │   │   ├── corrida_7
+│   │   │   ├── corrida_8
+│   │   │   └── corrida_9
+│   │   ├── loci_clasiffication           - analísis en bayescan
+│   │   ├── MslI_1                        - outfiles pasos 3 al 7 en ipyrad   (RRRTG)
+│   │   │   ├── coco_1_edits
+│   │   │   ├── coco_1_fastqs
+│   │   │   ├── estricto_min_sample_12_reference_outfiles
+│   │   │   ├── estricto_min_sample_1_reference_outfiles
+│   │   │   ├── estricto_min_sample_4_reference_outfiles
+│   │   │   ├── estricto_reference_across
+│   │   │   ├── estricto_reference_clust_0.9
+│   │   │   ├── estricto_reference_consens
+│   │   │   ├── laxo_min_sample_12_reference_outfiles
+│   │   │   ├── laxo_min_sample_1_reference_outfiles
+│   │   │   ├── laxo_min_sample_4_reference_outfiles
+│   │   │   ├── laxo_reference_across
+│   │   │   ├── laxo_reference_clust_0.85
+│   │   │   └── laxo_reference_consens
+│   │   ├── MslI_2                         - outfiles pasos 1 y 2 en ipyrad  (RCRTG)
+│   │   │   ├── coco_2_edits
+│   │   │   └── coco_2_fastqs
+│   │   ├── MslI_3                         - outfiles pasos 1 y 2 en ipyrad  (RTRTG)
+│   │   │   ├── coco_3_edits
+│   │   │   └── coco_3_fastqs
+│   │   ├── MslI_4                         - outfiles pasos 1 y 2 en ipyrad  (CRRTG)
+│   │   │   ├── coco_4_edits
+│   │   │   └── coco_4_fastqs
+│   │   ├── MslI_5                         - outfiles pasos 1 y 2 en ipyrad  (CCRTG)
+│   │   │   ├── coco_5_edits
+│   │   │   └── coco_5_fastqs
+│   │   ├── MslI_6                         - outfiles pasos 1 y 2 en ipyrad  (CTRTG)
+│   │   │   ├── coco_6_edits
+│   │   │   └── coco_6_fastqs
+│   │   ├── MslI_7                         - outfiles pasos 1 y 2 en ipyrad  (TRRTG)
+│   │   │   ├── coco_7_edits
+│   │   │   └── coco_7_fastqs
+│   │   ├── MslI_8                         - outfiles pasos 1 y 2 en ipyrad  (TCRTG)
+│   │   │   ├── coco_8_edits
+│   │   │   └── coco_8_fastqs
+│   │   ├── MslI_9                         - outfiles pasos 1 y 2 en ipyrad  (TTRTG)
+│   │   │   ├── coco_9_edits
+│   │   │   └── coco_9_fastqs
+│   │   ├── params                        - carpeta con los archhivos de parametros para correr los analisis en ipyrad
+│   │   ├── pop_files                     - carpeta con los popfile para cada uno de los analisis en ipyrad
+│   │   └── resultados                    - resumen de resultados 
+│   ├── RAW                               - archivos iniciales y preprocesados para esta enzima
+│   │   ├── grep                          - archivos filtrados de contaminaciones de otras librerias
+│   │   ├── info
+│   │   └── test
+│   │       └── original
+│   ├── scripts
+│   └── stacks *-----------------------------------------------------------------------------------------------------------*
+│       ├── barcodes			  - barcodes para identificar cada muestra
+│       ├── fastqc                        - carpeta con los analisis de fastqc para los archivos RAW y preprocesados
+│       ├── pop_map                       - carpeta con los popfile para cada uno de los analisis en ipyrad
+│       ├── process_radtags               - contiene los outfiles del script de preprocesamiento de stacks
+│       └── reference                     - analísis con genoma de referencia 
+│           ├── loci_differentiation      - analísis de neutralidad de locus 
+│           ├── reference_p12             - diferentes ensambles
+│           └── reference_p4              - diferentes ensambles
+├── PstI-MspI *------------------------------------------------------------------------------------------------------------*
+│   ├── ipyrad *-----------------------------------------------------------------------------------------------------------*
+│   │   ├── barcodes
+│   │   ├── fastqc
+│   │   ├── params
+│   │   ├── PM
+│   │   │   ├── coco_PM_edits
+│   │   │   ├── coco_PM_fastqs
+│   │   │   ├── estricto_min_sample_12_reference_outfiles
+│   │   │   ├── estricto_min_sample_2_reference_outfiles
+│   │   │   ├── estricto_min_sample_4_reference_outfiles
+│   │   │   ├── estricto_reference_across
+│   │   │   ├── estricto_reference_clust_0.9
+│   │   │   ├── estricto_reference_consens
+│   │   │   ├── laxo_min_sample_12_reference_outfiles
+│   │   │   ├── laxo_min_sample_2_reference_outfiles
+│   │   │   ├── laxo_min_sample_4_reference_outfiles
+│   │   │   ├── laxo_reference_across
+│   │   │   ├── laxo_reference_clust_0.85
+│   │   │   └── laxo_reference_consens
+│   │   ├── pop_files
+│   │   └── reference
+│   ├── RAW
+│   │   ├── grep
+│   │   ├── info
+│   │   └── test
+│   ├── scripts
+│   └── stacks *-----------------------------------------------------------------------------------------------------------*
+│       ├── barcodes
+│       ├── fastqc
+│       ├── pop_map
+│       ├── process_radtags
+│       └── reference
+│           ├── reference_m20_p12
+│           └── reference_m20_p4
+└── ref_coco                               - genoma de referencia de usado
 
-### **Enzimas de restriccion usadas**
 
-* **MslI**
-	* ipyrad: analisis en ipyrad
-		* barcodes: barcodes para identificar cada muestra
-		* fastqc : carpeta con los analisis de fastqc para los archivos RAW y preprocesados
-		* params : carpeta con los archhivos de parametros para correr los analisis en ipyrad
-		* popfiles : carpeta con los popfile para cada uno de los analisis en ipyrad
-		* MslI_#(1-9): debido a que se debe correr el ipyrad 9 veces (debido la forma de introducir el sitio de corte de la enzima de restriccion MslI, que se tiene que hacer por partes),
-		* MslI_1 : aqui estan todos los outfiles de los analisis de ipyrad
-
-	* stacks: analisis en stacks
-	* RAW: archivos iniciales y preprocesados para esta enzima
-		* test: archivos de prueba (alrededor de un 2.5% de los originales) para verificar funcionalidad de los scripts de manera rapida
-	* info: informacion suministrada por la gente que secuencio 
-	* MslI_R1.fastq.bz2  MslI_R2.fastq.bz2: archivos de trabajo comprimidos
-	* MslI_R1_grep.fastq  MslI_R2_grep.fastq: archivos de trabajo con los reads de otras librerias filtrados
-	* indice_1_cut.txt  indice_2_cut.txt: lista filtrada de indices de bibliotecas contaminantes
-	* indice_1.txt      indice_2.txt: lista con los indices de diferentes bibliotecas para filtrarlos
-
-* **PstI_MspI**
-	* ipyrad: analisis en ipyrad
-		* barcodes: barcodes para identificar cada muestra
-		* fastqc : carpeta con los analisis de fastqc para los archivos RAW y preprocesados
-		* params : carpeta con los archhivos de parametros para correr los analisis en ipyrad
-		* popfiles : carpeta con los popfile para cada uno de los analisis en ipyrad		
-		* PM : aqui estan todos los outfiles de los analisis de ipyrad
-
-	* stacks: analisis en stacks
-	* RAW: archivos iniciales y preprocesados para esta enzima
-		* test: archivos de prueba (alrededor de un 2.5% de los originales) para verificar funcionalidad de los scripts de manera rapida
-	* info: informacion suministrada por la gente que secuencio 
-	* PM_R1.fastq.bz2  PM_R2.fastq.bz2: archivos de trabajo comprimidos
-	* PM_R1_grep.fastq  PM_R2_grep.fastq: archivos de trabajo con los reads de otras librerias filtrados
-	* indice_1_cut.txt  indice_2_cut.txt: lista filtrada de indices de bibliotecas contaminantes
-	* indice_1.txt      indice_2.txt: lista con los indices de diferentes bibliotecas para filtrarlos
-
-
-
-
-### Scripts globales
-
-* **piloto_coco.sh**
-	* script gobal que llama al resto de scripts para poder correr el analisis completo
-* **borrar.sh**
-	* borra los archivos de corridas pasadas para evitar conflictos: este scritp debe ir aparte de piloto_coco.sh por cuestiones de seguirdad
