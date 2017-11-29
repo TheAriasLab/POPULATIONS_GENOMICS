@@ -76,6 +76,7 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 	
 * _**STACKS**_
 
+![alt text](https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/blob/master/assemblies_stacks.png)
 
 * **Preprocesaiento**
 	
