@@ -40,6 +40,7 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 
 * _**IPYRAD**_
 
+![alt text](https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/blob/master/assemblies_ipyrad.png)
 
 * **Preprocesamiento**
 
