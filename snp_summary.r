@@ -1,6 +1,9 @@
+#!/usr/bin/Rscript
 
-
+library("phantomjs")
+library("webshot")
 library("plotly")
+
 d = read.table("/home/jorge/vcf_full/summary_vcf.txt", col.names=c("path", "num_snp") )
 
 a=nrow(d) 
@@ -12,4 +15,6 @@ path<-subset(full, select=c("arreglo"))
 num_snp<-subset(full, select=c("num_snp")) 
 arreglo<-subset(full, select=c("arreglo")) 
 
-plot_ly(full, y=~arreglo,x=~num_snp, type = 'bar', orientation = 'h')
+p<-plot_ly(full, y=~arreglo,x=~num_snp, type = 'bar', orientation = 'h')
+#plotly_POST(p, filename="/home/jorge/vcf_full/snp_summary_image")
+export(p, file='/home/jorge/vcf_full/snp_summary_image.png')
