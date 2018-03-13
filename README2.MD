@@ -2,10 +2,12 @@
 
 ##  **Descripción**
 
-Pipelines que integran varias herramientas para descubrir SNPs. Entre las que se encuentran:
-stacks: corre process_radtags y refmap.pl (genoma de referencia) para varios parámetros
-ipyrad: corre ipyrad para varias configuraciones de parámetros (denovo,reference y parámetros relacionados con la clusterización)
-DiscoSNP: Corre run_discoSnpRad.sh y discoRAD_finalization.sh
+1) Pipelines que integran varias herramientas para descubrir SNPs. Entre las que se encuentran:
+stacks ,ipyrad y DiscoSnp++
+
+http://catchenlab.life.illinois.edu/stacks/
+http://ipyrad.readthedocs.io/
+http://colibread.inria.fr/software/discosnp/
 
 Scripts para realizar análisis de pobaciones en diferentes softwares
 análisis para detectar locus bajo selecciòn - Bayescan
