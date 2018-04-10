@@ -44,7 +44,7 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 
 * _**IPYRAD**_
 
-#TAG: en el wiki una descripcion breve de lo que hace y la cita del programa
+#TAG: en el wiki una descripcion breve de lo que hace y la cita del programa,  explicar lo de laxo y estricto
 
 ![alt text](https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/blob/master/assemblies-ipyrad_ok.png)
 
