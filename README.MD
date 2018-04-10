@@ -9,6 +9,8 @@
 
 **Preprocesaiento** : remover contaminaciones de otras librerias => demultiplexado => verificar sitio de restricción => remover adaptadores
 
+#TAG: de otras librerias o de las librerias?
+
 **Procesamiento**: establecer las reglas para llamar SNPs y filtrar los SNPs de acuerdo a esas reglas
 
 **Analísis**: utilizar los SNPs encontrados para responder preguntas biológicas 
@@ -32,6 +34,8 @@
 	* Preprocesamiento, procesamiento, analísis
 	*https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/tree/master/MslI/scripts
 	*https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/tree/master/PstI-MspI/scripts
+	
+#TAG: se debe organizar de preprocesamiento a analisis para que se entienda mas facil, que otros scripts tenemos para analisis?
 
 
 ## **Funcionamiento de los scripts**
@@ -40,6 +44,8 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 
 * _**IPYRAD**_
 
+#TAG: en el wiki una descripcion breve de lo que hace y la cita del programa
+
 ![alt text](https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/blob/master/assemblies-ipyrad_ok.png)
 
 * **Preprocesamiento**
@@ -47,25 +53,46 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 * pre_procesamiento_1_MslI.sh y pre_procesamiento_1_PM.sh
 
 	* revisa los índices combinatorios (XXXXXX+XXXXXX) de los archivos RAW y crea un índice por cada archivo (R1 Y R2) que contiene una lista con los diferentes indices combinatorios y su frecuencia.
+
+#TAG: como asi indices combinatorios? los adaptadores por individuo? explicar!
+
 	* luego el programa elige el índice combinatorio que más se repite (en este caso en el 98% de los reads) y elimina los reads con otros indices combinatorios, estos reads con estos índices son producto de contaminaciones de otras librerias en el proceso de secuenciación
+
+#TAG: no se entiende, y como se trabaja cuando hay muchos adaptadores combinados?
+
 	* luego el programa verifica que solo haya un tipo de índice combinatorio en el nuevo archivo RAW y crea un nuevo archivo en donde se puede verificar la existencia de un solo índice manualmente.
-	* luego corre el fastqc para revisar anomalías en la información
 	
+	
+	* luego corre el fastqc para revisar anomalías en la información
+
+#TAG: esto podria ser explicado mejor! no hay necesidad de inventarselo, porque esta en esa pagina web
 	
 * pre_procesamiento_2_reference_MslI.sh y pre_procesamiento_1_reference_PM.sh
 
 	* crea los archivos de parámetros para cada uno de los analísis teniendo en cuenta sus particularidades de manera AUTOMÁTICA :)
+
+#TAG: ? explicar
 	* corre los pasos 1 y 2 del ipyrad que corresponden a demultiplexado, verificación del sitio de la enzima de restricción y remoción de adaptadores.
+	
 	* debido a la particularidad de ser altamente degenerado que tiene el sitio de restricción de MslI (NNRTG) y al hecho de que ipyrad no recibe más de un nucleotido degenerado al mismo tiempo en la secuencia de restricción de la enzima (en este caso N y R) se descompone el dominio de la enzima de restriccion de manera que solo se use *un* nucleotido degenerado de la siguiente manera
+	
 	**NNRTG = RRRTG, RCRTG, RTRTG, CRRTG, CCRTG, CTRTG, TRRTG, TCRTG, TTRTG**  se corre cada uno por separado y luego se unen de nuevo usando el parámetro -m en ipyrad
 	
+#TAG: Aqui me surge una duda, el hecho de que esta enzima es altamente degenerada querra decir que quizas los datos de los SNPS no sean tan confiables si se usan programas que no tienen alineamientos al genoma? 
+
 * **Procesamiento**
 
 * wrapper_reference.sh y wrapper_2_reference.sh
 
 	* en wrapper_reference.sh se unen los nueve analísis producto de los pasos 1 y 2 del ipyrad usando el parametro -m
+
+#TAG: brevemente explicar en WIKI?
 	* se adiciona a los archivos de parametros de forma AUTOMÁTICA el PATH del genoma de referencia y el metodo de ensamblaje (denovo+reference en este caso)
+
+#TAG: UMMMM se me olvido
+
 	* se ramifica del anÃ¡lisis de forma AUTOMÁTICA de manera que se crea una rama *estricta* y una *laxo* en cuanto a las reglas para llamar SNPs a partir de los reads preprocesados, se varìan los parámetros 11, 12 ,14 , 23 del ipyrad
+	
 	* corre los pasos 3, 4, ,5 ,6 del ipyrad
 
 * step_7_reference_MslI.sh y step_7_PM_reference.sh
@@ -87,11 +114,16 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 	* luego el programa verifica que solo haya un tipo de índice combinatorio en el nuevo archivo RAW y crea un nuevo archivo en donde se puede verificar la existencia de un solo índice manualmente.
 	* luego corre el fastqc para revisar anomalìas en la información
 
+#TAG: Si esto es lo mismo ponerlo de manera general para todos
 	
 * process_radtags.sh
 
 	* stacks tiene la particularidad de no aceptar barcodes de diferente tamaño para la demultiplexacion de las muestras           , entonces se corre el process_radtags tantas veces como grupos de barcodes haya
+	
 	* corre process_radtags tantas veces como grupos de barcodes haya
+
+#TAG: no se entiende :* no se si es normal :) me parece que si jejeje
+
 	* corre fasqc a los archivos resultantes para verificar anomalidades en los dato de forma manual
 	
 * **Procesamiento**
@@ -99,8 +131,14 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 * refmap_MslI.sh y refmap_PM.sh
 
 	* stacks no recibe los paired-end reads de la forma en que ipyrad lo hace por lo que hay que alinear los reads a un genoma de referencia y crear un único archivo .sam por cada muestra (en vez de dos)
+
+#TAG: realmente esto parece mas informativo porque si alinea los dos reads cada una es mas larga por ambos lados, nose... discutamoslo
+
 	* refmap_MslI.sh debe ser corrido en primer lugar para que de forma automática haga los alineamientos muestra por muestra
+	
 	* se llama el script de stacks refmap.pl con todas las reglas para llamar los SNPs **en** los individuos y se ramfica en analísis **entre** los individuos de igual manera que en los scripts del pipeline ipyrad step_7_reference_MslI.sh y step_7_PM_reference.sh
+	
+#TAG: OK pero toca citar las partecitas de stacks
 
 * **Analísis**
 
@@ -108,6 +146,8 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 
 	* se busca saber cuales loci son neutrales y cuales están bajo selección. En primer lugar usando *PGDspider* se cambia el formato de los output de ipyrad de stacks de la siguiente manera
 	  .VCF => .PGD => .GESTE/Bayescan, de este modo se llevan los archivos al Bayescan que usa su **propio** formato, no se cambia directamente el formato VCF => GESTE/Bayescan porque se pierde información
+	  
+#TAG: Corregir spelling!
 
 * bayescan.sh  
 
