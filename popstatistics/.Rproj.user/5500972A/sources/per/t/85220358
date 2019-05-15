@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552409716511.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2643552844",
+    "id" : "85220358",
+    "lastKnownWriteTime" : 1552680874,
+    "last_content_update" : 1552680874192,
+    "path" : "~/Documents/COCOS_NUCIFERA_GBS/popstatistics/test/test_statistics.r",
+    "project_path" : "test/test_statistics.r",
+    "properties" : {
+        "cursorPosition" : "194,76",
+        "scrollLine" : "180",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

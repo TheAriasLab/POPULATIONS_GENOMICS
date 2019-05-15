@@ -1,0 +1,94 @@
+# This document produced by structureHarvester core version vA.2 July 2014
+# http://www.structureharvester.com/
+# https://github.com/dentearl/structureHarvester/
+# http://taylor0.biology.ucla.edu/structureHarvester
+# http://users.soe.ucsc.edu/~dearl/software/structureHarvester
+# Written by Dent Earl, dearl (a) soe ucsc edu.
+# CITATION:
+# Earl, Dent A. and vonHoldt, Bridgett M. (2012)
+# STRUCTURE HARVESTER: a website and program for visualizing
+# STRUCTURE output and implementing the Evanno method.
+# Conservation Genetics Resources 4(2) 359-361. DOI: 10.1007/s12686-011-9548-7
+# Core version: vA.2 July 2014
+# File generated at 2019-Mar-14 12:58:21 -05
+#
+
+##########
+# K	Reps	mean est. LnP(Data)	stdev est. LnP(Data)
+1	9	-2700965.166667	28.786759
+2	10	-1912811.980000	31.535229
+3	10	-1684654.240000	50.437689
+4	10	-1601030.840000	897.193875
+5	10	-227372871.370000	331097471.437388
+6	10	-39378229.910000	21730110.555562
+
+##########
+# File name	Run #	K	Est. Ln prob. of data	Mean value of Ln likelihood	Variance of Ln likelihood
+structure_k1-2_f		1	-2700935.7	-2694111.3	13648.8
+structure_k1-6_f		1	-2701001.2	-2694111.3	13779.9
+structure_k1-7_f		1	-2700958.6	-2694111.2	13694.9
+structure_k1-9_f		1	-2700958.6	-2694111.2	13694.9
+structure_k1-3_f		1	-2700935.7	-2694111.3	13648.8
+structure_k1-4_f		1	-2701001.2	-2694111.3	13779.9
+structure_k1-1_f		1	-2700935.7	-2694111.3	13648.8
+structure_k1-8_f		1	-2700958.6	-2694111.2	13694.9
+structure_k1-5_f		1	-2701001.2	-2694111.3	13779.9
+structure_k2-9_f		2	-1912848.8	-1901875.0	21947.6
+structure_k2-7_f		2	-1912848.8	-1901875.0	21947.6
+structure_k2-2_f		2	-1912809.5	-1901870.0	21879.1
+structure_k2-5_f		2	-1912799.8	-1901870.5	21858.6
+structure_k2-1_f		2	-1912809.5	-1901870.0	21879.1
+structure_k2-10_f		2	-1912745.5	-1901870.8	21749.3
+structure_k2-8_f		2	-1912848.8	-1901875.0	21947.6
+structure_k2-4_f		2	-1912799.8	-1901870.5	21858.6
+structure_k2-6_f		2	-1912799.8	-1901870.5	21858.6
+structure_k2-3_f		2	-1912809.5	-1901870.0	21879.1
+structure_k3-7_f		3	-1684639.8	-1671556.1	26167.5
+structure_k3-2_f		3	-1684721.0	-1671555.2	26331.7
+structure_k3-3_f		3	-1684721.0	-1671555.2	26331.7
+structure_k3-5_f		3	-1684599.2	-1671555.2	26087.9
+structure_k3-1_f		3	-1684721.0	-1671555.2	26331.7
+structure_k3-6_f		3	-1684599.2	-1671555.2	26087.9
+structure_k3-9_f		3	-1684651.1	-1671553.1	26196.1
+structure_k3-10_f		3	-1684651.1	-1671553.1	26196.1
+structure_k3-8_f		3	-1684639.8	-1671556.1	26167.5
+structure_k3-4_f		3	-1684599.2	-1671555.2	26087.9
+structure_k4-8_f		4	-1601789.9	-1586349.9	30879.9
+structure_k4-6_f		4	-1600057.4	-1586260.2	27594.4
+structure_k4-3_f		4	-1601928.4	-1586327.9	31200.9
+structure_k4-10_f		4	-1600385.6	-1586322.1	28127.0
+structure_k4-5_f		4	-1600057.4	-1586260.2	27594.4
+structure_k4-1_f		4	-1601928.4	-1586327.9	31200.9
+structure_k4-2_f		4	-1601928.4	-1586327.9	31200.9
+structure_k4-9_f		4	-1600385.6	-1586322.1	28127.0
+structure_k4-4_f		4	-1600057.4	-1586260.2	27594.4
+structure_k4-7_f		4	-1601789.9	-1586349.9	30879.9
+structure_k5-1_f		5	-31712155.3	-1571746.4	60280817.6
+structure_k5-3_f		5	-707111394.3	-1577991.5	1411066805.7
+structure_k5-4_f		5	-707111394.3	-1577991.5	1411066805.7
+structure_k5-2_f		5	-31712155.3	-1571746.4	60280817.6
+structure_k5-9_f		5	-17857043.5	-1568632.4	32576822.1
+structure_k5-10_f		5	-17857043.5	-1568632.4	32576822.1
+structure_k5-6_f		5	-17752044.4	-1568566.0	32366956.9
+structure_k5-7_f		5	-17752044.4	-1568566.0	32366956.9
+structure_k5-5_f		5	-707111394.3	-1577991.5	1411066805.7
+structure_k5-8_f		5	-17752044.4	-1568566.0	32366956.9
+structure_k6-9_f		6	-65623184.2	-1565889.1	128114590.2
+structure_k6-6_f		6	-41809134.9	-1562255.7	80493758.5
+structure_k6-2_f		6	-2085976.8	-1515037.7	1141878.1
+structure_k6-8_f		6	-41809134.9	-1562255.7	80493758.5
+structure_k6-10_f		6	-65623184.2	-1565889.1	128114590.2
+structure_k6-1_f		6	-2085976.8	-1515037.7	1141878.1
+structure_k6-7_f		6	-41809134.9	-1562255.7	80493758.5
+structure_k6-3_f		6	-44312190.8	-1561894.9	85500591.7
+structure_k6-5_f		6	-44312190.8	-1561894.9	85500591.7
+structure_k6-4_f		6	-44312190.8	-1561894.9	85500591.7
+
+Software written by Dent Earl while at EEB Dept, UCLA, BME Dept UCSC
+dearl (a) soe ucsc edu
+CITATION:
+Earl, Dent A. and vonHoldt, Bridgett M. (2012)
+STRUCTURE HARVESTER: a website and program for visualizing
+STRUCTURE output and implementing the Evanno method.
+# Conservation Genetics Resources 4(2) 359-361. DOI: 10.1007/s12686-011-9548-7
+Core version: vA.2 July 2014
