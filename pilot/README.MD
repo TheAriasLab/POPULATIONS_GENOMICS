@@ -156,8 +156,3 @@ se busca comparar la cantidad de SNPs recuperados a partir de los dos tratamient
 * bayescan_graph.r
 
 	* script R para graficar los resultados provenientes de bayescan.sh, crea una grafica en donde se marcan los loci bajo selección y establece el False Discovery Rate (FDR) un parámetro para poder para identificar los loci bajo selección 
-
-
-## **Arbol de directorios**
-
-https://github.com/BiologiaComparativaCiB/POPULATIONS_GENOMICS/blob/master/treefile.txt
